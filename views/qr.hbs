@@ -1,0 +1,21 @@
+<div class="wrapper">
+    <div class="content">
+        {{> header }}
+        <main class="main qr-page">
+            <h2 class="page__title qr-page__title" style="margin-bottom: 40px;">Отсканируйте QR - код</h2>
+            <div class="qr-page__desc" style="padding: 32px 40px;display: flex; justify-content: space-between;align-items: center;width: 70%;">
+                <p style="margin-right: 30px;font-size: 18px;">Для корректного считывания qr-кода снизьте, пожалуйста, яркость на телефоне. В случае расфокусировки при считывании рекомендуем воспользоваться поиском.</p>
+                <a href="/search" class="btn btn-blue" style="padding: 20px 28px;">Поиск</a>
+            </div>
+            <div class="qr-page__camera">
+                <video id="video" width="684" height="681" style="border: 1px solid gray"></video>
+            </div>
+            <p id="message"></p>
+        </main>
+
+    </div>
+    {{> footer }}
+</div>
+{{> scripts }}
+<script src="/javascripts/zxing.js"></script>
+<script src="/javascripts/qr-scripts.js"></script>

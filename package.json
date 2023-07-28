@@ -1,0 +1,26 @@
+{
+  "name": "nextstand",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run front\"",
+    "front": "node app",
+    "nodemon": "nodemon app",
+    "dev": "concurrently \"npm run server\" \"npm run nodemon\"",
+    "server": "json-server -w server/db.json -p 4008"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "hbs": "~4.0.4",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "json-server": "^0.17.3",
+    "lowdb": "^6.0.1",
+    "nodemon": "^2.0.22"
+  }
+}

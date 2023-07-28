@@ -1,0 +1,17 @@
+<div class="wrapper">
+    <div class="content">
+        {{> header}}
+        <main class="main search-page">
+            <h2 class="page__title search-page__title">Введите свою фамилию</h2>
+            <div class="search-page__form">
+                <form id="searchForm" method="post">
+                    <label><input id="searchName" class="search-page__input" type="text" name="search" placeholder="..." value=""></label>
+                </form>
+                <ul class="search-page__result"></ul>
+            </div>
+        </main>
+        <div class="simple-keyboard"></div>
+    </div>
+    {{> footer }}
+</div>
+{{> scripts }}

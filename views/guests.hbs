@@ -1,0 +1,22 @@
+<div class="wrapper">
+    <div class="content">
+        {{> header}}
+        <main class="main guests-page">
+            <h2 class="page__title guests-page__title">Банкетный стол <span>#{{active.table}}</span></h2>
+
+            <ol class="guests-page__list">
+                <li class="guests-page__list--item active check-in">{{active.lastname}} {{active.name}}</li>
+                {{#each guests}}
+                    {{#if check-in}}
+                        <li class="guests-page__list--item check-in">{{lastname}} {{name}}</li>
+                    {{else}}
+                        <li class="guests-page__list--item">{{lastname}} {{name}}</li>
+                    {{/if}}
+                {{/each}}
+            </ol>
+        </main>
+    </div>
+    {{> footer }}
+</div>
+{{> scripts }}
+

@@ -1,0 +1,741 @@
+@font-face {
+  font-family: "TTTravels-ExtraLight";
+  src: url("../fonts/TTTravels-ExtraLight.eot");
+  src: local("TTTravels-ExtraLight"), local("TTTravels-ExtraLight"), url("../fonts/TTTravels-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/TTTravels-ExtraLight.woff") format("woff"), url("../fonts/TTTravels-ExtraLight.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TTTravels-Light";
+  src: url("../fonts/TTTravels-Light.eot");
+  src: local("TTTravels-Light"), local("TTTravels-Light"), url("../fonts/TTTravels-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/TTTravels-Light.woff") format("woff"), url("../fonts/TTTravels-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TTTravels-Regular";
+  src: url("../fonts/TTTravels-Regular.eot");
+  src: local("TTTravels-Regular"), local("TTTravels-Regular"), url("../fonts/TTTravels-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/TTTravels-Regular.woff") format("woff"), url("../fonts/TTTravels-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  src: url("../fonts/Gilroy-SemiBold.eot");
+  src: local("Gilroy SemiBold"), local("Gilroy-SemiBold"), url("../fonts/Gilroy-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-SemiBold.woff") format("woff"), url("../fonts/Gilroy-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TTTravels-DemiBold";
+  src: url("../fonts/TTTravels-DemiBold.eot");
+  src: local("TTTravels-DemiBold"), local("TTTravels-DemiBold"), url("../fonts/TTTravels-DemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/TTTravels-DemiBold.woff") format("woff"), url("../fonts/TTTravels-DemiBold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TTTravels-Bold";
+  src: url("../fonts/TTTravels-Bold.eot");
+  src: local("TTTravels-Bold"), local("TTTravels-Bold"), url("../fonts/TTTravels-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/TTTravels-Bold.woff") format("woff"), url("../fonts/TTTravels-Bold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+*:focus {
+  outline: 1px dotted #ffffff;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: "TTTravels-Regular", sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #ffffff;
+  background-color: #110E13;
+  width: 100vw;
+  max-width: 1080px;
+  min-height: 1920px;
+  height: 100vh;
+  overflow: hidden;
+}
+@media (min-width: 1081px) {
+  body {
+    min-height: unset;
+    overflow: unset;
+    height: 1920px;
+  }
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  background: #110E13 url("../images/bg.png") bottom no-repeat;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  z-index: 10;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h2.page__title {
+  font-family: "TTTravels-DemiBold", sans-serif;
+  font-size: 45px;
+  line-height: 54px;
+  text-align: center;
+  text-transform: uppercase;
+}
+h2.page__title.page__title--search {
+  max-width: 485px;
+}
+
+a.btn {
+  display: block;
+  border-radius: 7px;
+  padding: 28px;
+  font-family: "TTTravels-Light", sans-serif;
+  font-size: 34px;
+  line-height: 41px;
+  color: #FFFFFF;
+  text-align: center;
+}
+a.btn.btn-blue {
+  background-color: #3346E2;
+}
+a.btn.btn-inherit {
+  border: 3px solid #3346E2;
+}
+
+.hg-theme-default {
+  background-color: #282829;
+}
+
+.hg-theme-default .hg-button {
+  background: #474747;
+  height: 55px;
+}
+
+.simple-keyboard .hg-button:active {
+  background: #383838;
+  color: white;
+}
+
+/* Blocks */
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 101px 0 92px 0;
+  max-height: 270px;
+  position: relative;
+}
+.header__buttons {
+  position: absolute;
+  max-width: 300px;
+  top: 30px;
+  right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__buttons .back-btn {
+  width: 37px;
+  height: 34px;
+}
+.header__buttons .back-btn svg {
+  width: 100%;
+  height: 100%;
+}
+.header__buttons .timing-btn {
+  padding: 10px 20px;
+  margin-left: 31px;
+  border: 2px solid #989799;
+  border-radius: 7px;
+  max-width: 201px;
+  font-family: "TTTravels-ExtraLight", sans-serif;
+  font-size: 13.1854px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+.header__logo {
+  width: 283px;
+  height: 77px;
+  text-align: center;
+}
+.header__logo svg {
+  width: 100%;
+  height: 100%;
+}
+
+.content-timing .timing-btn {
+  display: none;
+}
+
+.footer {
+  padding: 55px 101px 55px 98px;
+}
+
+.footer__sponsors {
+  display: -ms-grid;
+  display: grid;
+  /*-ms-grid-columns: (1fr)[8];*/
+  grid-template-columns: repeat(8, 1fr);
+  /*-ms-grid-rows: (1fr)[3];*/
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 45px;
+  grid-row-gap: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  max-height: 244px;
+}
+.footer__sponsors .div1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 1/1/2/3;
+}
+.footer__sponsors .div2 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: 1/3/2/5;
+}
+.footer__sponsors .div3 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-area: 1/5/2/7;
+}
+.footer__sponsors .div4 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 2;
+  grid-area: 1/7/2/9;
+}
+.footer__sponsors .div5 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 2/1/3/3;
+}
+.footer__sponsors .div6 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: 2/3/3/5;
+}
+.footer__sponsors .div7 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-area: 2/5/3/7;
+}
+.footer__sponsors .div8 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 2;
+  grid-area: 2/7/3/9;
+}
+.footer__sponsors .div9 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: 3/2/4/4;
+}
+.footer__sponsors .div10 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-area: 3/4/4/6;
+}
+.footer__sponsors .div11 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 2;
+  grid-area: 3/6/4/8;
+}
+
+.footerSwiper {
+  height: 148px;
+  background: inherit;
+}
+.footerSwiper .swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footerSwiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  height: calc((100% - 30px) / 2) !important;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.footerSwiper .swiper-slide img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.main-page {
+  padding-top: 214px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main-page__title {
+  font-family: "Gilroy-SemiBold", sans-serif;
+  font-size: 77.4703px;
+  line-height: 74px;
+  text-align: center;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  color: #ffffff;
+  max-width: 770px;
+  margin-bottom: 118px;
+}
+.main-page__subtitle {
+  font-family: "TTTravels-ExtraLight", sans-serif;
+  font-size: 68.3191px;
+  line-height: 82px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 58px;
+}
+.main-page__subtitle p {
+  font-size: 53.9381px;
+  line-height: 65px;
+  text-transform: lowercase;
+}
+.main-page__buttons {
+  display: -ms-grid;
+  display: grid;
+  /*-ms-grid-columns: (1fr)[2];*/
+  grid-template-columns: repeat(2, 1fr);
+  /*-ms-grid-rows: (1fr)[2];*/
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 14px;
+  max-width: 521px;
+  height: 209px;
+}
+.main-page__buttons .btn-qr {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1/1/2/2;
+}
+.main-page__buttons .btn-search {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1/2/2/3;
+}
+.main-page__buttons .btn-timing {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 2/1/3/3;
+}
+
+.qr-page {
+  padding: 150px 0;
+}
+.qr-page__title {
+  margin-bottom: 84px;
+}
+.qr-page__camera {
+  background: rgba(230, 230, 230, 0.4);
+  border: 5px solid rgba(255, 255, 255, 0.54);
+  -webkit-backdrop-filter: blur(13px);
+          backdrop-filter: blur(13px);
+  border-radius: 7px;
+  width: 684px;
+  height: 681px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.qr-page__camera--image {
+  width: 267px;
+  height: 267px;
+  border-radius: 50%;
+  border: 10px solid rgba(255, 255, 255, 0.17);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.qr-page__camera--icon {
+  width: 140px;
+  height: 88px;
+}
+.qr-page__camera--icon svg {
+  width: 100%;
+}
+
+.search-page {
+  padding: 158px 0;
+}
+.search-page__title {
+  margin-bottom: 57px;
+}
+.search-page__input {
+  min-width: 778px;
+  background: rgba(81, 79, 82, 0.79);
+  border: 3px solid rgba(255, 255, 255, 0.53);
+  border-radius: 7px;
+  padding: 20px 32px;
+  font-family: "TTTravels-DemiBold", sans-serif;
+  font-size: 50px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.search-page__result {
+  padding: 0 21px;
+  background: rgba(81, 79, 82, 0.79);
+  border-radius: 0 0 7px 7px;
+  margin-top: -3px;
+}
+.search-page__result--item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 24px 15px;
+  font-family: "TTTravels-Regular", sans-serif;
+  font-size: 32px;
+  line-height: 38px;
+  color: rgba(255, 255, 255, 0.33);
+}
+
+.search-page__result--item + .search-page__result--item {
+  border-top: 2px solid #959595;
+}
+
+.greeting-page {
+  padding: 43px 86px;
+}
+.greeting-page__title {
+  font-family: "TTTravels-DemiBold", sans-serif;
+  font-size: 64px;
+  line-height: 77px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.greeting-page__title p {
+  font-family: "TTTravels-Regular", sans-serif;
+  margin-bottom: 50px;
+}
+.greeting-page__inner {
+  font-family: "TTTravels-Regular", sans-serif;
+  font-size: 55px;
+  line-height: 66px;
+  color: #ffffff;
+}
+.greeting-page__item--table {
+  margin-bottom: 102px;
+}
+.greeting-page__item--table span {
+  display: inline-block;
+  border: 2.24934px solid #3346E2;
+  border-radius: 4.27951px;
+  padding: 22px 42px 22px 43px;
+  margin-left: 53px;
+}
+.greeting-page__item--greeting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.greeting-page .btn.btn-blue {
+  display: inline-block;
+  padding: 19px 50px;
+  font-size: 23.7169px;
+  line-height: 28px;
+  min-width: 354px;
+}
+
+.greeting-phrase p {
+  margin-bottom: 42px;
+}
+
+.please-photo {
+  width: 161px;
+  height: 155px;
+  border-radius: 5px;
+  background: #8A8A8A;
+  margin-right: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 1.2;
+  text-align: center;
+  font-family: "TTTravels-SemiBold", sans-serif;
+}
+.please-photo__img {
+  width: 71px;
+  height: 55px;
+  margin-bottom: 17px;
+}
+.please-photo__img svg {
+  width: 100%;
+  height: 100%;
+}
+.guests-page {
+  padding-top: 93px;
+}
+.guests-page__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 44px;
+}
+.guests-page__title span {
+  display: inline-block;
+  font-size: 96.4104px;
+  line-height: 116px;
+  text-transform: uppercase;
+  color: #3346E2;
+  margin-left: 31px;
+}
+.guests-page__list {
+  background: rgba(241, 241, 241, 0.12);
+  border: 1.10455px solid #BCBCBC;
+  -webkit-backdrop-filter: blur(22.5px);
+          backdrop-filter: blur(22.5px);
+  border-radius: 7.73182px;
+  padding: 22px 62px 20px 100px;
+  min-width: 710px;
+}
+.guests-page__list--item {
+  width: 100%;
+  font-family: "TTTravels-ExtraLight", sans-serif;
+  font-size: 32px;
+  line-height: 38px;
+  color: #ffffff;
+  list-style: auto;
+  margin: 29px 0;
+  position: relative;
+}
+.guests-page__list--item.check-in:after {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 32 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.54562 11.989L11.8557 22.7514L29.9547 2.37602' stroke='%233346E2' stroke-opacity='0.35' stroke-width='4.41818'/%3E%3C/svg%3E");
+  width: 32px;
+  height: 27px;
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+.guests-page__list--item::marker {
+  margin-right: 10px;
+}
+.guests-page__list--item.active {
+  font-family: "TTTravels-DemiBold", sans-serif;
+  color: #3346E2;
+}
+.guests-page__list--item.active:after {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 32 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.54562 11.989L11.8557 22.7514L29.9547 2.37602' stroke='%233346E2' stroke-width='4.41818'/%3E%3C/svg%3E");
+  width: 32px;
+  height: 27px;
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+.timing-page {
+  padding: 0 82px 0 127px;
+}
+.timing-page__title {
+  margin-bottom: 36px;
+}
+.timing-page__info {
+  padding: 33px 60px;
+  margin-bottom: 27px;
+  width: 100%;
+  background: rgba(241, 241, 241, 0.12);
+  border: 1.10455px solid #BCBCBC;
+  -webkit-backdrop-filter: blur(22.5px);
+          backdrop-filter: blur(22.5px);
+  border-radius: 7.73182px;
+  font-family: "TTTravels-ExtraLight", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+}
+.timing-page__table {
+  padding: 20px 70px 48px 60px;
+  background: rgba(241, 241, 241, 0.12);
+  border: 1.10455px solid #BCBCBC;
+  -webkit-backdrop-filter: blur(22.5px);
+          backdrop-filter: blur(22.5px);
+  border-radius: 7.73182px;
+}
+.timing-page__table table {
+  table-layout: fixed;
+}
+.timing-page__table thead th {
+  padding: 27px 0;
+  text-align: center;
+  font-family: "TTTravels-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #3346E2;
+}
+.timing-page__table tbody td {
+  padding: 4px 0;
+}
+.timing-page__table tbody th {
+  width: 24%;
+  font-family: "TTTravels-DemiBold", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.005em;
+}
+.timing-page__table tbody td {
+  font-family: "TTTravels-ExtraLight", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+}
